@@ -1,0 +1,143 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0;
+  background-color: #1D1D1F;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.header {
+  z-index: 2000;
+  position: fixed;
+  width: 100%;
+  height: 44px;
+  background-color: #171719;
+  top: 0;
+}
+
+.menu-btn {
+  position: fixed;
+  z-index: 3000;
+  right: 0;
+  margin-top: 10px;
+  transition: transform 0.3s;
+  width: 30px;
+  height: 25px;
+  background-color: none;
+  margin-right: 10px;
+}
+.menu-line1 {
+  position: fixed;
+  background-color: white;
+  width: 18px;
+  height: 1px;
+  z-index: 3000;
+  margin-top: 7px;
+  margin-left: 5px;
+  transition: transform 0.3s;
+}
+
+.menu-line2 {
+  position: fixed;
+  background-color: white;
+  width: 18px;
+  height:1px;
+  z-index: 3000;
+  margin-top: 15px;
+  margin-left: 5px;
+  transition: transform 0.3s;
+  
+}
+
+.slidebar{
+  height: 100%;
+  background-color: #171719;
+  width: 0px;
+  position: fixed;
+  z-index: 2500;
+  top:0;
+  left:0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+#logo {
+  z-index: 4000;
+  position:fixed;
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+.button{
+  text-align: center;
+  margin-top: 74px;
+  margin-left: 20px;
+  width: calc(100% - 40px);
+  height: 150px;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 1rem;
+  border: none;
+  position: absolute;
+  background: #1D1D1F;
+
+   }
+ .button_back{
+   margin-top: 74px;
+   margin-left: 20px;
+   width: calc(100% - 40px);
+   height: 150px;
+   background-image: radial-gradient(circle
+   farthest-corner at 10% 20%, rgba(255,94,247,1)17.8%,
+   rgba(2,245,255,1)100.2%);
+   border-radius: 10px;
+   z-index: -1;
+   position: absolute;
+   left:0;
+   top:0;
+   background-size: 100% 100%;
+   filter: blur(10px);
+   /*animation: Render 1s linear infinite*/
+ }
+
+@keyframes Render {
+  0% {
+    background-position: 0% 0%;
+    
+  }
+  50%{
+    background-position: 100% 100%;
+    
+  }
+  100%{
+    background-position: 0% 0%;
+    
+  }
+}
+
+#welcome_txt {
+  position: absolute;
+  margin-top: 104px;
+  color: white;
+  text-align: center;
+  margin-left: 25px;
+  width: calc(100% - 50px);
+}
+
+.footer {
+  position: absolute;
+  background-color: black;
+  margin-top: 500px;
+  height: 200px;
+  width: 100%;
+}
+#s_text{
+  position: absolute;
+  color: white;
+  margin-top: 80px;
+  margin-left: 40px;
+  font-size: 30px;
+}
